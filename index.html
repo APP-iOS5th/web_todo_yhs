@@ -27,9 +27,9 @@
       align-items: center;
     }
 
-    .completed {
+    /* .completed {
       text-decoration: line-through;
-    }
+    } */
   </style>
 </head>
 
@@ -83,11 +83,11 @@
       checkbox.classList.add('custom-control-input', 'me-2');
       checkbox.id = 'todoCheckbox' + (list.childElementCount + 1);
       checkbox.addEventListener('change', function() {
-        if (this.checked) {
-          item.classList.add('completed');
-        } else {
-          item.classList.remove('completed');
-        }
+        // if (this.checked) {
+        //   item.classList.add('completed');
+        // } else {
+        //   item.classList.remove('completed');
+        // }
         storeTodos(); // Update storage on checkbox change
       });
       var label = document.createElement('label');
@@ -135,4 +135,3 @@
 </body>
 
 </html>
-
